@@ -45,6 +45,6 @@
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
-	<string>Network-Root</string>
+	<string>Root</string>
 </dict>
 </plist>
