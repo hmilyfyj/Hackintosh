@@ -277,6 +277,42 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CPUFriend.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CPUFriend</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CPUFriendDataProvider.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -286,12 +322,6 @@
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
-			<key>DummyPowerManagement</key>
-			<false/>
-			<key>MaxKernel</key>
-			<string></string>
-			<key>MinKernel</key>
-			<string></string>
 		</dict>
 		<key>Force</key>
 		<array/>
@@ -315,15 +345,13 @@
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>ExtendBTFeatureFlags</key>
+			<key>DummyPowerManagement</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
-			<false/>
-			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
 			<false/>
@@ -357,11 +385,11 @@
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>PickerAttributes</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>External</string>
+			<string>Builtin</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -403,7 +431,7 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
-			<string>Bootstrap</string>
+			<string>None</string>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>EnablePassword</key>
@@ -417,7 +445,7 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>Default</string>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>Vault</key>
@@ -487,10 +515,6 @@
 			<false/>
 			<key>MLB</key>
 			<string>C070254054NKXPG1H</string>
-			<key>ProcessorType</key>
-			<integer>0</integer>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
 			<key>ROM</key>
 			<data>oYc/gYRH</data>
 			<key>SpoofVendor</key>
@@ -550,8 +574,8 @@
 		<key>Drivers</key>
 		<array>
 			<string>OpenRuntime.efi</string>
-			<string>HfsPlus.efi</string>
 			<string>OpenCanopy.efi</string>
+			<string>HfsPlus.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -579,7 +603,7 @@
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ConsoleMode</key>
-			<string></string>
+			<string>Max</string>
 			<key>DirectGopRendering</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
@@ -591,9 +615,9 @@
 			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>Resolution</key>
-			<string></string>
+			<string>Max</string>
 			<key>SanitiseClearScreen</key>
-			<false/>
+			<true/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
