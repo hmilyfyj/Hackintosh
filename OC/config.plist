@@ -48,8 +48,6 @@
 		</array>
 		<key>Patch</key>
 		<array/>
-		<key>Patch</key>
-		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AllowRelocationBlock</key>
@@ -587,8 +585,6 @@
 			<false/>
 			<key>MaxBIOSVersion</key>
 			<false/>
-			<key>MaxBIOSVersion</key>
-			<false/>
 			<key>MLB</key>
 			<string>C070254054NKXPG1H</string>
 			<key>ProcessorType</key>
@@ -711,7 +707,6 @@
 			<false/>
 			<key>GopPassThrough</key>
 			<string>Disabled</string>
-
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
