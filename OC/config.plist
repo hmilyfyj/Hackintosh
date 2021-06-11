@@ -289,7 +289,7 @@
 				<key>Comment</key>
 				<string>Fix audio</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/FakePCIID</string>
 				<key>MaxKernel</key>
