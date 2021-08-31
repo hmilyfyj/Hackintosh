@@ -420,6 +420,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<false/>
 			<key>KernelArch</key>
@@ -534,7 +536,7 @@
 				<key>boot-args</key>
 				<string></string>
 				<key>csr-active-config</key>
-				<data>/wcAAA==</data>
+				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 				<key>SystemAudioVolume</key>
@@ -629,15 +631,15 @@
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
+			<string>PciRoot(0x0)/Pci(0x1f,0x3)</string>
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
 			<false/>
 			<key>MinimumVolume</key>
-			<integer>20</integer>
+			<integer>0</integer>
 			<key>PlayChime</key>
-			<string>Disabled</string>
+			<string>Auto</string>
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
